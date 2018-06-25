@@ -1,0 +1,26 @@
+{
+  "name": "appdyn-rabbit-lab",
+  "version": "0.1.0",
+  "description": "lab",
+  "main": "index.js",
+  "scripts": {
+    "party": "pm2 start process.yaml && ./curl.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlpokus/appdyn-rabbit-lab.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karlpokus/appdyn-rabbit-lab/issues"
+  },
+  "homepage": "https://github.com/karlpokus/appdyn-rabbit-lab#readme",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "appdynamics": "^4.4.2"
+  },
+  "devDependencies": {
+    "pm2": "^2.10.4"
+  }
+}
