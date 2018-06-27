@@ -5,7 +5,7 @@ const q = 'appdyn-test';
 let i = 0;
 
 function publishTasks(ch) {
-	console.log('publishTasks called');
+	console.log('adding to queue');
 
 	const txn = appd.startTransaction('/scheduler');
 

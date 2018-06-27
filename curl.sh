@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# wait for http to be up
+sleep 2
+
 while true; do
-	curl http://localhost:5005
-	sleep 2
+	curl -s http://localhost:5005
+	echo "request sent"
+	sleep 5
 done

@@ -15,7 +15,7 @@ function connectToRabbit(next) {
 }
 
 function publish(ch, req, res) {
-	console.log('publish called');
+	console.log('got request. Adding to queue');
 
 	const txn = appd.getTransaction(req);
 	const exitCall = txn.startExitCall({
@@ -35,7 +35,7 @@ function publish(ch, req, res) {
   ch.sendToQueue(q, Buffer.from(JSON.stringify(msg)));
 	txn.endExitCall(exitCall);
 	txn.end();
-	res.end('done');
+	res.end();
 }
 
 function startServer(ch) {

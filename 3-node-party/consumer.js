@@ -14,12 +14,12 @@ function logger(msg) {
 
 	if (msg) {
 		const content = JSON.parse(msg.content.toString());
-		console.log(`content.data: ${ content.data }`);
+		console.log(`got a msg. Starting remote call`);
 
 		const txn = appd.startTransaction(appd.parseCorrelationInfo(content.singularityheader));
 
 		arbitraryRemoteCall(() => {
-			console.log('done');
+			console.log('remote call done');
 			txn.end();
 			ch.ack(msg);
 		});
