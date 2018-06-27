@@ -4,7 +4,7 @@
   "description": "lab",
   "main": "index.js",
   "scripts": {
-    "party": "pm2 start process.yaml && ./curl.sh"
+    "party": "pm2 start process.yaml"
   },
   "repository": {
     "type": "git",

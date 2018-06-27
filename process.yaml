@@ -2,3 +2,5 @@ apps:
   - script: 3-node-party/consumer.js
   - script: 3-node-party/http-producer.js
   - script: 3-node-party/scheduler.js
+  - script: curl.sh
+    exec_interpreter: bash

@@ -14,6 +14,7 @@ All nodes connect to broker, creates channel and asserts the same queue.
 
 # usage
 ```bash
+# runs 3 nodes and a curl
 $ npm run party
 ```
 
