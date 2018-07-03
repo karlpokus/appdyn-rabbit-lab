@@ -18,6 +18,19 @@ All nodes connect to broker, creates channel and asserts the same queue.
 $ npm run party
 ```
 
+# monitor rabbit instance
+https://www.appdynamics.com/community/exchange/extension/rabbitmq-monitoring-extension/
+
+- requires java agent or SIM agent and RabbitMQ Management Plugin enabled
+- install `rabbitmqmonitor-2.0.0.zip` into `<machine-agent-home>/monitors`
+- update `RabbitMQMonitor/config.yaml`
+- update `conf/controller.xml`
+
+start
+```bash
+$ ./bin/machine-agent
+```
+
 # todos
 - [ ] figure out where to add singularityheader in broker payload
 - [ ] [monitor broker](https://www.appdynamics.com/community/exchange/extension/rabbitmq-monitoring-extension/)
