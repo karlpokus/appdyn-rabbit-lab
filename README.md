@@ -30,7 +30,7 @@ start
 ```bash
 $ ./bin/machine-agent
 # or
-$ java -jar ./machinagent.jar &
+$ java -jar machinagent.jar &
 ```
 
 # todos
