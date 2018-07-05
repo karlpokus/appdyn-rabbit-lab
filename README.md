@@ -29,6 +29,8 @@ https://www.appdynamics.com/community/exchange/extension/rabbitmq-monitoring-ext
 start
 ```bash
 $ ./bin/machine-agent
+# or
+$ java -jar ./machinagent.jar &
 ```
 
 # todos
