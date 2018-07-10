@@ -30,12 +30,12 @@ start
 ```bash
 $ ./bin/machine-agent
 # or
-$ java -jar machinagent.jar &
+$ path/to/java -jar machinagent.jar &
 ```
 
 # todos
 - [ ] figure out where to add singularityheader in broker payload
-- [ ] [monitor broker](https://www.appdynamics.com/community/exchange/extension/rabbitmq-monitoring-extension/)
+- [x] [monitor broker](https://www.appdynamics.com/community/exchange/extension/rabbitmq-monitoring-extension/)
 
 # refs
 https://gist.github.com/ayushghosh/140e36db94b111c3ea3d3eca69bfc34b
