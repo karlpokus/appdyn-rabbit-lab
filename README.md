@@ -25,6 +25,7 @@ https://www.appdynamics.com/community/exchange/extension/rabbitmq-monitoring-ext
 - install `rabbitmqmonitor-2.0.0.zip` into `<machine-agent-home>/monitors`
 - update `RabbitMQMonitor/config.yaml`
 - update `conf/controller.xml`
+- set loglevel `info|debug` in `<machine-agent-home>/conf/logging/log4j.xml`
 
 start
 ```bash
